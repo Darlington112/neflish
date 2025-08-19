@@ -1,0 +1,45 @@
+.hero {
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner {
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 80%);
+}
+.hero-caption {
+  position: absolute;
+  left: 5%;
+  bottom: 300px;
+}
+.hero-caption img {
+  width: 470px;
+}
+.hero-caption p {
+  font-size: 15px;
+}
+.hero-btns {
+  margin-top: 20px;
+  display: flex;
+}
+.hero-btns button {
+  padding: 10px 25px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  margin-right: 20px;
+}
+.button-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero-btns .dark-btn {
+  background: #666;
+  color: #ffff;
+}
+.hero-btns button:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,53 @@
+.nav-bar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav-bar .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-bar .nav-left img {
+  width: 100px;
+}
+.nav-bar .nav-left .nav-links a {
+  margin: 10px;
+  color: white;
+}
+.nav-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.nav-right .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-right .profile .profileImg {
+  width: 20px;
+}
+
+.nav-right .signIn {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  color: #fff;
+  background: #333;
+  padding: 5px;
+  font-size: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: none;
+}
+.nav-right .profile:hover .signIn {
+  display: inline-block;
+}

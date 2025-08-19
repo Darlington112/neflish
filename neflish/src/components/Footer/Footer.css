@@ -1,0 +1,26 @@
+.footer {
+  padding: 0px 200px;
+  margin-top: 30px;
+}
+.footer .social-icons {
+  margin: 40px 0px 30px 0px;
+}
+.social-icons a {
+  margin: 10px;
+  font-size: 25px;
+}
+.footer .important-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.important-links a {
+  line-height: 20px;
+}
+.footer .copyright {
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
