@@ -27,7 +27,7 @@
   gap: 20px;
   cursor: pointer;
 }
-.nav-right .profile {
+.nav-right .profile .signIn-link {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -36,7 +36,7 @@
   width: 20px;
 }
 
-.nav-right .signIn {
+.profile .signIn {
   position: absolute;
   top: 100%;
   right: 10px;
@@ -48,6 +48,6 @@
   cursor: pointer;
   display: none;
 }
-.nav-right .profile:hover .signIn {
+.profile:hover .signIn {
   display: inline-block;
 }

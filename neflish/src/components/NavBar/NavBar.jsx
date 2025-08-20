@@ -5,6 +5,7 @@ import { FaBell } from "react-icons/fa";
 import profileIcon from "../../assets/caret_icon.svg";
 import profileImg from "../../assets/profile_img.png";
 import logo from "../../assets/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -12,25 +13,28 @@ const NavBar = () => {
       <div className="nav-left">
         <img src={logo} alt="" />
         <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="/">Tv Shows</a>
-          <a href="/">Movies</a>
-          <a href="/">New & Popular</a>
-          <a href="/">My List</a>
-          <a href="/">Browse by Language</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/tv_shows">Tv Shows</NavLink>
+          <NavLink to="/movies">Movies</NavLink>
+          <NavLink to="/new_and_popular">New & Popular</NavLink>
+          <NavLink to="/my_list">My List</NavLink>
+          <NavLink to="/browse_by_language">Browse by Language</NavLink>
         </div>
       </div>
       <div className="nav-right">
         <IoSearch />
         <p>Children</p>
         <FaBell />
-        <div className="profile" title="Sign In">
-          <img src={profileImg} alt="" className="profileImg" />
-          <img src={profileIcon} alt="" />
+        <div className="profile">
+          <Link to="/login" className="signIn-link">
+            <img src={profileImg} alt="" className="profileImg" />
+            <img src={profileIcon} alt="" />
+          </Link>
+
+          <Link to="/login" className="signIn">
+            Sign In
+          </Link>
         </div>
-        <a href="/" className="signIn">
-          Sign In
-        </a>
       </div>
     </div>
   );
