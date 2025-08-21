@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Cards.css";
 import Cards_data from "../../assets/cards/Cards_data";
 import cards_data from "../../assets/cards/Cards_data";
+import { Link } from "react-router-dom";
 
 const Cards = ({ title, category }) => {
   const options = {
@@ -41,9 +42,12 @@ const Cards = ({ title, category }) => {
       <h2>{title ? title : "Popular Movies"}</h2>
       <div className="cards-list">
         {movieData.map((movie_data, index) => {
-          console.log(movie_data);
           return (
-            <div className="card-list" key={index}>
+            <Link
+              to={`/player/${movie_data.id}`}
+              className="card-list"
+              key={index}
+            >
               <img
                 src={
                   `https://image.tmdb.org/t/p/w500` + movie_data.backdrop_path
@@ -51,7 +55,7 @@ const Cards = ({ title, category }) => {
                 alt=""
               />
               <p>{movie_data.original_title}</p>
-            </div>
+            </Link>
           );
         })}
       </div>
